@@ -1,0 +1,83 @@
+<footer>
+<div class="container">
+<div class="first-level">
+    <div class="footer-contacts-wrapper">
+        <a class="link logo logo-footer" href="">english<span class="logo-green">excellence.</span></a>
+        <address class="footer-contacts">
+        <ul class="list footer-contacts-list">
+            <li>
+                <p>Phone number:</p>
+                <a class="link" href=""tel:+3806844394261"">+380 (68) 443-94-26</a>
+            </li>
+            <li>
+                <p>Address:</p>
+                <a class="link" href="">32a M. Bazhana ave</a>
+            </li>
+        </ul>
+    </address>
+    </div>
+
+    <div class="footer-links-wrapper">
+        <ul class="footer-links">
+            <li class="footer-links-item">
+                <a class="footer-links-link" href="">About us</a>
+            </li>
+            <li class="footer-links-item">
+                <a class="footer-links-link" href="">Our lessons</a>
+            </li>
+            <li class="footer-links-item">
+                <a class="footer-links-link" href="">Teachers</a>
+            </li>
+            <li class="footer-links-item">
+                <a class="footer-links-link" href="">Reviews</a>
+            </li>
+            <li class="footer-links-item">
+                <a class="footer-links-link" href="">Contact us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-social-wrapper">
+        <ul class="fotter-socila-list">
+            <li class="footer-social-item">
+                <a href="https://www.facebook.com/goITclub/">
+                    <svg class="footer-social-icon" width="28" height="28">
+                        <use></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a href="https://www.instagram.com/goitclub/">
+                    <svg class="footer-social-icon" width="28" height="28">
+                        <use></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="footer-social-item">
+                <a href="https://www.youtube.com/c/GoIT">
+                    <svg class="footer-social-icon" width="28" height="28">
+                        <use></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="second-level">
+    <div class="footer-license">
+        <p>©2023  English Excellence. All rights reserved.</p>
+    </div>
+    <div>
+        <ul class="terms-and-conditions">
+            <li class="terms-and-conditions-item">
+                <a href="">Privacy Policy</a>
+            </li>
+            <li class="terms-and-conditions-item">
+                <a href="">Terms of Service</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</footer>
