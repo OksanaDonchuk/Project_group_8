@@ -27,7 +27,7 @@
   overflow: hidden;
 
   background-image: linear-gradient(57deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-    url(../img/hero-bg-mobile@1x.jpg);
+    url(../img/hero/hero-bg-mobile@1x.jpg);
 
   border-radius: 16px;
 
@@ -43,7 +43,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url('../img/hero-bg-mobile@2x.jpg');
+      url('../img/hero/hero-bg-mobile@2x.jpg');
   }
 
   @media screen and (min-width: 524px) and (max-width: 824px) {
@@ -55,7 +55,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero-bg-tablet@1x.jpg);
+      url(../img/hero/hero-bg-tablet@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -65,7 +65,7 @@
           rgba(0, 0, 0, 0.4) 0%,
           rgba(0, 0, 0, 0) 100%
         ),
-        url(../img/hero-bg-tablet@2x.jpg);
+        url(../img/hero/hero-bg-tablet@2x.jpg);
     }
   }
 
@@ -76,7 +76,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero-bg-desktop-light@1x.jpg);
+      url(../img/hero/hero-bg-desktop-light@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -86,12 +86,14 @@
           rgba(0, 0, 0, 0.4) 0%,
           rgba(0, 0, 0, 0) 100%
         ),
-        url(../img/hero-bg-desktop_light@2x.jpg);
+        url(../img/hero/hero-bg-desktop_light@2x.jpg);
     }
   }
 }
 
 .hero__container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -174,4 +176,45 @@
 .hero__btn:hover,
 .hero__btn:focus {
   background-color: var();
+}
+
+.hero__scroll-down-btn {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  right: 14px;
+  bottom: 14px;
+
+  height: 38px;
+  width: 38px;
+
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--green);
+
+  transition: background-color var(--transition-dur-func),
+    color var(--transition-dur-func);
+
+  @media screen and (min-width: 768px) {
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+.hero__scroll-down-icon {
+  fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.hero__scroll-down-btn:hover,
+.hero__scroll-down-btn:focus {
+  background-color: var(--green);
+  color: var(--white);
 }
