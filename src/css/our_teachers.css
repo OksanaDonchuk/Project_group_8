@@ -1,0 +1,63 @@
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.teachers-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teachers-card img {
+    border-radius: 50%;
+  }
+.card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  gap: 8px;
+}
+.card-title {  
+  color: var(--black);  
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.card-description { 
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;  
+  font-size: 14px;
+  line-height: 1.71;
+}
+@media screen and (min-width: 768px) {
+    .teachers-list {
+        padding: 0 64px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 32px;
+      }
+      .teachers-card {
+        flex-basis: calc((100% - 32px) / 2);
+      }      
+      .card-description {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+}
+@media screen and (min-width: 1280px) {
+    .teachers-list {
+        padding: 0;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 32px;
+      }
+      .teachers-card {
+        flex-basis: calc((100% - 96px) / 4);
+      }
+}
