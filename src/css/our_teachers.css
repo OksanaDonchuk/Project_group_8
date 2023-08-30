@@ -42,6 +42,9 @@
       .teachers-card {
         flex-basis: calc((100% - 32px) / 2);
       }
+      .teachers-card img {
+        border-radius: 50%;
+      }
       .card-description {
         font-size: 16px;
         line-height: 1.5;
