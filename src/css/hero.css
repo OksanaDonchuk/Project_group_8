@@ -89,7 +89,7 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #38ae5f;
+  background-color: var(--hover-green);
 }
 
 .hero-scroll-down-btn {
