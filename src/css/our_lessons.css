@@ -1,0 +1,150 @@
+.lessons__paragraph1 {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.lessons__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lessons__elements {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #4dc274;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.lessons__elements:nth-child(2n) {
+  background: var(--green);
+  .lessons__title2 {
+    color: var(--white);
+  }
+  .lessons__paragraph2 {
+    color: var(--white);
+  }
+  .lessons__paragraph3 {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .lessons__link {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+}
+
+.lessons__title2 {
+  color: var(--black);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -0.4px;
+  margin-top: 40px;
+}
+
+.lessons__paragraph2 {
+  color: var(--black);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12; /* 112.5% */
+  letter-spacing: -0.64px;
+  margin-top: 16px;
+}
+
+.lessons__paragraph3 {
+  height: 132px;
+  flex-shrink: 0;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.lessons__link {
+  display: inline-flex;
+  /* padding: 14px 78px; */
+  padding-top: 14px;
+  padding-bottom: 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--green);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+  color: var(--white);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.lessons__link:focus {
+  background: var(--hover-green);
+}
+
+@media screen and (min-width: 768px) {
+  .lessons__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 64px;
+  }
+  .lessons__elements {
+    width: 336px;
+    border-radius: 30px;
+  }
+
+  .lessons__title2 {
+    margin-top: 32px;
+  }
+  .lessons__paragraph2 {
+    line-height: 1.37;
+  }
+  .lessons__paragraph3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 32px;
+  }
+  .lessons__link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.55;
+    margin: 32px 16px;
+  }
+
+  .lessons__link:hover {
+    background: var(--hover-green);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lessons__list {
+    flex-wrap: nowrap;
+  }
+  .lessons__paragraph3 {
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 255px;
+    height: 148px;
+  }
+  .lessons__link {
+    margin: 32px;
+  }
+}
