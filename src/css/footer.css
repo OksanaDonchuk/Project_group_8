@@ -26,7 +26,6 @@ font-style: normal
     margin-bottom: 16px;
 }
 
-
 .footer-contacts-title{
 font-size: 14px;
 font-weight: 400;
@@ -50,6 +49,7 @@ color: var(--white);
     margin-bottom: 20px;
 }
 .footer-links-link{
+    display: block;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
@@ -87,3 +87,11 @@ transition: border var(--transition-dur-func), fill var(--transition-dur-func) ;
     fill: var(--green);
 }
 
+.footer-license-text{
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.02em;
+text-align: left;
+color: var(--white);
+}
