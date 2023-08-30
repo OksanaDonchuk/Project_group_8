@@ -6,7 +6,7 @@
   padding-right: 20px;
 }
 
-@media screen (min-width: 375px) {
+@media screen and (min-width: 375px) {
   .container {
     width: 375px;
   }
