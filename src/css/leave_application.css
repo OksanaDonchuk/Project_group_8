@@ -3,13 +3,18 @@
   flex-direction: column;
 }
 
-.application-title {
+.application-title .section-title {
+  margin-bottom: 14px;
+}
+
+.application-title .section-description {
   margin-bottom: 20px;
 }
 
 .application-content {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .application-decor {
@@ -17,11 +22,37 @@
 }
 
 .application-form-container {
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .application-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+.application-form-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 18px;
+  font-size: 21px;
+  color: var(--black);
+  transition: border-color var(--transition-dur-func);
+}
+
+.application-form-input:focus {
+  border-color: var(--green);
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.application-form-input::placeholder {
+  font-size: 14px;
+  line-height: 1.28;
 }
