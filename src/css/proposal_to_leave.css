@@ -25,6 +25,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .proposal-main-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
 .call-to-action-heading {
   margin-bottom: 65px;
   color: var(--white);
@@ -331,7 +338,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .thumb-proposal-img {
-    background: url('../img/books/books@2x.png');
+    background: url('/img/books/books@2x.png');
     background-size: contain;
     background-repeat: no-repeat;
   }
