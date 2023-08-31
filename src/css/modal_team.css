@@ -7,6 +7,7 @@
   min-width: 200px;
   padding: 16px;
   border-radius: 30px;
+  transition: opacity var(--transition-dur-func);
 }
 
 .modal-team-btn-close {
@@ -61,6 +62,7 @@
   border: 1px solid var(--green);
   max-height: 280px;
   max-width: 160px;
+  min-width: 140px;
 
   border-radius: 30px;
 }
@@ -159,7 +161,8 @@
   }
 
   .modal-team-dev {
-    padding: 16px;
+    min-width: 180px;
+    padding: 16px 8px;
   }
 }
 
@@ -186,7 +189,7 @@
 
 @media screen and (min-width: 1130px) {
   .modal-team-container {
-    width: 700px;
+    width: 750px;
   }
   .modal-team-dev {
     flex-basis: calc((100% - 8px * 2) / 3);
@@ -195,7 +198,7 @@
 
 @media screen and (min-width: 1280px) {
   .modal-team-container {
-    min-width: 850px;
+    min-width: 900px;
   }
 
   .modal-team-dev {
