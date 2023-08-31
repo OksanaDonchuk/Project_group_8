@@ -86,6 +86,31 @@
   width: 146px;
 }
 
+.radio-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.application-checkbox:checked
+  + .application-checkbox-name
+  > .radio-icon-container {
+  fill: var(--green);
+  border-color: var(--green);
+}
+
 .application-checkbox-title {
   font-size: 18px;
   font-weight: var(--font-weight-semi);
@@ -101,9 +126,11 @@
 }
 
 .application-checkbox-name {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: -0.02;
+  cursor: pointer;
 }
 
 .application-send {

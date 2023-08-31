@@ -55,43 +55,73 @@
         <form class="application-form-checkbox">
           <p class="application-checkbox-title">Choose a teacher</p>
           <div class="application-checkbox-container">
-            <label class="application-checkbox-name">
+            <div class="radio-container">
               <input
-                class="application-checkbox"
+                class="application-checkbox visually-hidden"
+                id="radio-maria"
                 type="radio"
                 name="teacher"
                 value="Maria"
                 checked
               />
-              Maria</label
-            >
-            <label class="application-checkbox-name">
+              <label class="application-checkbox-name" for="radio-maria">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="../img/radio-sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Maria</label
+              >
+            </div>
+            <div class="radio-container">
               <input
-                class="application-checkbox"
+                class="application-checkbox visually-hidden"
+                id="radio-artem"
                 type="radio"
                 name="teacher"
                 value="Artem"
               />
-              Artem</label
-            >
-            <label class="application-checkbox-name">
+              <label class="application-checkbox-name" for="radio-artem">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="../img/radio-sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Artem</label
+              >
+            </div>
+
+            <div class="radio-container">
               <input
-                class="application-checkbox"
+                class="application-checkbox visually-hidden"
+                id="radio-ilona"
                 type="radio"
                 name="teacher"
                 value="Ilona"
               />
-              Ilona</label
-            >
-            <label class="application-checkbox-name">
+              <label class="application-checkbox-name" for="radio-ilona">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="../img/radio-sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Ilona</label
+              >
+            </div>
+
+            <div class="radio-container">
               <input
-                class="application-checkbox"
+                class="application-checkbox visually-hidden"
+                id="radio-volodymyr"
                 type="radio"
                 name="teacher"
                 value="Volodymyr"
               />
-              Volodymyr</label
-            >
+              <label class="application-checkbox-name" for="radio-volodymyr">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="../img/radio-sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Volodymyr</label
+              >
+            </div>
           </div>
         </form>
       </div>
