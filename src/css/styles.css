@@ -25,6 +25,7 @@
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #fff;
+  --hover-green: #38ae5f;
   --font-weight-bold: 700;
   --font-weight-semi: 600;
   --font-weight-reg: 400;
@@ -33,5 +34,5 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('../Manrope/Manrope-VariableFont_wght.ttf');
+  src: url('../font_manrope/Manrope-VariableFont_wght.ttf');
 }
