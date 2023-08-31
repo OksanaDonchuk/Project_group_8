@@ -67,7 +67,7 @@
   .about-us--image {
     width: 100%;
     height: 243px;
-    background-repeat: 30px;
+    border-radius: 30px;
   }
 }
 
