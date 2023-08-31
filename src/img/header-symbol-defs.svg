@@ -22,5 +22,11 @@
 <symbol id="icon-line" viewBox="0 0 592 32">
 <path fill="none" stroke="#4dc274" style="stroke: var(--color1, #4dc274)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="32" d="M0 16h592"></path>
 </symbol>
+<symbol id="icon-burger" viewBox="0 0 46 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M8.671 5.074h35.329"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M8.671 24.468h35.329"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M19.602 14.771h24.398"></path>
+</symbol>
+
 </defs>
 </svg>
