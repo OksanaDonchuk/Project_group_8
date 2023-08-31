@@ -1,5 +1,6 @@
 .application-section {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -11,10 +12,6 @@
   margin-bottom: 20px;
 }
 
-.application-content {
-  display: flex;
-}
-
 .application-decor {
   display: none;
 }
@@ -22,7 +19,8 @@
 .application-form-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  width: 335px;
+  margin-bottom: 40px;
 }
 
 .application-form {
@@ -86,7 +84,6 @@
 
 .application-form-checkbox {
   width: 146px;
-  margin-bottom: 40px;
 }
 
 .application-checkbox-title {
@@ -111,7 +108,7 @@
 
 .application-send {
   display: block;
-  min-width: 335px;
+  width: 335px;
   height: 52px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -144,4 +141,99 @@
   color: currentColor;
   font-size: 12px;
   line-height: 1.33;
+}
+
+@media screen and (max-width: 374px) {
+  .application-form-container {
+    width: 100%;
+  }
+  .application-send {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .application-title .section-title {
+    margin-bottom: 16px;
+  }
+
+  .application-title .section-description {
+    margin-bottom: 64px;
+  }
+
+  .application-form-container {
+    margin-bottom: 32px;
+    align-items: center;
+    width: 500px;
+  }
+
+  .application-form {
+    margin-bottom: 32px;
+  }
+
+  .application-form-input {
+    height: 56px;
+    line-height: 1.5;
+  }
+
+  .application-form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-form-textarea {
+    width: 500px;
+    height: 104px;
+    line-height: 1.5;
+  }
+
+  .application-form-textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-form-checkbox {
+    width: 500px;
+  }
+
+  .application-checkbox-title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .application-checkbox-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .application-checkbox-name {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .application-send {
+    display: block;
+    width: 500px;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .application-inform {
+    width: 500px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .application-inform-accent-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }
