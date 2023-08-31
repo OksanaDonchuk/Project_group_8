@@ -315,7 +315,7 @@
     display: block;
     width: 214px;
     height: 263px;
-    background: url('../img/books.png');
+    background: url('../img/books/books.png');
     background-repeat: no-repeat;
   }
 }
@@ -331,7 +331,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .thumb-proposal-img {
-    background: url('../img/books@2x.png');
+    background: url('../img/books/books@2x.png');
     background-size: contain;
     background-repeat: no-repeat;
   }
