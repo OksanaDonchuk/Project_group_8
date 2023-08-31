@@ -1,0 +1,27 @@
+.application-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-title {
+  margin-bottom: 20px;
+}
+
+.application-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-decor {
+  display: none;
+}
+
+.application-form-container {
+  margin-bottom: 18px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
