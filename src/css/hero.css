@@ -45,8 +45,7 @@
   align-items: center;
 
   height: 100%;
-
-  padding: 164px 72px;
+  padding: 425px 20px 72px 20px;
 }
 
 .hero-title {
@@ -149,6 +148,7 @@
     gap: 32px;
     justify-content: center;
     align-items: start;
+    padding: 260px 184px 295px 32px;
   }
 
   .hero-title {
@@ -208,7 +208,7 @@
 
   .hero-container {
     padding-left: 64px;
-    padding-right: 64px;
+    padding-top: 164px;
   }
 
   .hero-title {

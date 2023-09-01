@@ -159,6 +159,7 @@
 
   .application-title .section-description {
     margin-bottom: 64px;
+    width: 586px;
   }
 
   .application-form-container {
@@ -256,6 +257,7 @@
 
   .app-img {
     margin-bottom: 20px;
+    border-radius: 30px;
   }
 
   .application-count {
