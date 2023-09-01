@@ -36,7 +36,7 @@
   font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
 }
 
 .about-us--image {
@@ -50,7 +50,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .about-us--bottom {
     gap: 32px;
   }
@@ -72,15 +71,14 @@
 }
 
 @media screen and (min-width: 1280px) {
-
   .about-us--bottom {
     flex-direction: row;
   }
-  
+
   .about-us--cards {
     width: 682px;
   }
-  
+
   .about-us--image {
     width: 310px;
     height: auto;
