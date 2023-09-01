@@ -11,6 +11,15 @@
     </div>
     <div class="application-content">
       <div class="application-decor">
+        <img
+          class="app-img"
+          srcset="./img/application/application_img@2x.png 2x"
+          src="./img/application/application_img.png"
+          alt="Girls with book and computer"
+          width="492"
+          height="92"
+        />
+
         <p class="application-count">1000</p>
         <p class="application-lessons-description">
           of our online English language lessons! This journey has been full of
@@ -18,8 +27,9 @@
           this joyful event with you.
         </p>
       </div>
-      <div class="application-form-container">
-        <form class="application-form">
+
+      <form class="application-form-container">
+        <div class="application-input-container">
           <input
             class="application-form-input"
             type="text"
@@ -50,55 +60,93 @@
             name="user-comment"
             placeholder="Comment"
           ></textarea>
-        </form>
+        </div>
 
-        <form class="application-form-checkbox">
+        <div class="application-form-checkbox">
           <p class="application-checkbox-title">Choose a teacher</p>
-          <label>
-            <input
-              class="application-checkbox"
-              type="radio"
-              name="teacher"
-              value="Maria"
-              checked
-            />
-            Maria</label
-          >
-          <label>
-            <input
-              class="application-checkbox"
-              type="radio"
-              name="teacher"
-              value="Artem"
-            />
-            Maria</label
-          >
-          <label>
-            <input
-              class="application-checkbox"
-              type="radio"
-              name="teacher"
-              value="Ilona"
-            />
-            Maria</label
-          >
-          <label>
-            <input
-              class="application-checkbox"
-              type="radio"
-              name="teacher"
-              value="Volodymyr"
-            />
-            Maria</label
-          >
-        </form>
-      </div>
-    </div>
+          <div class="application-checkbox-container">
+            <div class="radio-container">
+              <input
+                class="application-checkbox visually-hidden"
+                id="radio-maria"
+                type="radio"
+                name="teacher"
+                value="Maria"
+                checked
+              />
+              <label class="application-checkbox-name" for="radio-maria">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="./img/sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Maria</label
+              >
+            </div>
+            <div class="radio-container">
+              <input
+                class="application-checkbox visually-hidden"
+                id="radio-artem"
+                type="radio"
+                name="teacher"
+                value="Artem"
+              />
+              <label class="application-checkbox-name" for="radio-artem">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="./img/sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Artem</label
+              >
+            </div>
 
-    <button class="application-send button" type="button">Send</button>
-    <p class="application-inform">
-      By clicking on “Send” button, you agree to our Privacy Policy, and allow
-      Promodo to use this information for marketing purposes.
-    </p>
+            <div class="radio-container">
+              <input
+                class="application-checkbox visually-hidden"
+                id="radio-ilona"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+              />
+              <label class="application-checkbox-name" for="radio-ilona">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="./img/sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Ilona</label
+              >
+            </div>
+
+            <div class="radio-container">
+              <input
+                class="application-checkbox visually-hidden"
+                id="radio-volodymyr"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+              />
+              <label class="application-checkbox-name" for="radio-volodymyr">
+                <span class="radio-icon-container">
+                  <svg class="radio-icon" width="10" height="10">
+                    <use href="./img/sprite.svg#icon-circle"></use>
+                  </svg> </span
+                >Volodymyr</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <button class="application-send button" type="submit">Send</button>
+        <div class="application-inform">
+          <p>
+            By clicking on “Send” button, you agree to our&nbsp;<a
+              class="application-inform-accent-link"
+              href=""
+              >Privacy Policy</a
+            >, <br />
+            and allow Promodo to use this information for marketing purposes.
+          </p>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
