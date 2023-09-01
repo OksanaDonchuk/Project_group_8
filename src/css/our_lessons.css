@@ -22,19 +22,23 @@
 
 .lessons__elements:nth-child(2n) {
   background: var(--green);
-  .lessons__title2 {
-    color: var(--white);
-  }
-  .lessons__paragraph2 {
-    color: var(--white);
-  }
-  .lessons__paragraph3 {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .lessons__link {
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-  }
+}
+
+.lessons__elements:nth-child(2n) .lessons__title2 {
+  color: var(--white);
+}
+
+.lessons__elements:nth-child(2n) .lessons__paragraph2 {
+  color: var(--white);
+}
+
+.lessons__elements:nth-child(2n) .lessons__paragraph3 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lessons__elements:nth-child(2n) .lessons__link {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .lessons__title2 {
