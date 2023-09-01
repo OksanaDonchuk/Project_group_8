@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 40px;
 }
 
 .lessons__elements {
@@ -16,23 +17,28 @@
   background: #fff;
   display: flex;
   flex-direction: column;
+  padding: 40px 20px;
 }
 
 .lessons__elements:nth-child(2n) {
   background: var(--green);
-  .lessons__title2 {
-    color: var(--white);
-  }
-  .lessons__paragraph2 {
-    color: var(--white);
-  }
-  .lessons__paragraph3 {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .lessons__link {
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-  }
+}
+
+.lessons__elements:nth-child(2n) .lessons__title2 {
+  color: var(--white);
+}
+
+.lessons__elements:nth-child(2n) .lessons__paragraph2 {
+  color: var(--white);
+}
+
+.lessons__elements:nth-child(2n) .lessons__paragraph3 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lessons__elements:nth-child(2n) .lessons__link {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .lessons__title2 {
@@ -43,7 +49,6 @@
   font-weight: 700;
   line-height: 1.2; /* 120% */
   letter-spacing: -0.4px;
-  margin-top: 40px;
 }
 
 .lessons__paragraph2 {
@@ -67,8 +72,6 @@
   font-weight: 400;
   line-height: 1.7;
   margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .lessons__link {
@@ -81,10 +84,6 @@
   border-radius: 12px;
   background: var(--green);
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-
   color: var(--white);
   font-family: Manrope;
   font-size: 14px;
@@ -107,11 +106,9 @@
   .lessons__elements {
     width: 336px;
     border-radius: 30px;
+    padding: 32px 16px;
   }
 
-  .lessons__title2 {
-    margin-top: 32px;
-  }
   .lessons__paragraph2 {
     line-height: 1.37;
   }
@@ -125,7 +122,6 @@
     padding-bottom: 16px;
     font-size: 18px;
     line-height: 1.55;
-    margin: 32px 16px;
   }
 
   .lessons__link:hover {
@@ -134,17 +130,19 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .lessons__elements {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .lessons__list {
     flex-wrap: nowrap;
   }
   .lessons__paragraph3 {
     margin-top: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
     width: 255px;
     height: 148px;
   }
   .lessons__link {
-    margin: 32px;
+    margin-top: 32px;
   }
 }

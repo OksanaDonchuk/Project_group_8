@@ -33,6 +33,7 @@
 }
 
 .call-to-action-heading {
+  display: block;
   margin-bottom: 65px;
   color: var(--white);
   font-size: 38px;
