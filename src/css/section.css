@@ -1,6 +1,6 @@
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-title {
@@ -21,7 +21,8 @@
   position: absolute;
   z-index: -1;
   left: 0;
-  bottom: 2px;
+  bottom: 0;
+  transform: translateY(-20%);
   display: block;
   width: 100%;
   height: 12px;
@@ -39,8 +40,8 @@
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .section-title {
@@ -60,8 +61,8 @@
 
 @media screen and (min-width: 1280px) {
   .section {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   .section-description {

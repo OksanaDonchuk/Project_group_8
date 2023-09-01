@@ -1,0 +1,307 @@
+.application-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.application-title .section-title {
+  margin-bottom: 14px;
+}
+
+.application-title .section-description {
+  margin-bottom: 20px;
+}
+
+.application-decor {
+  display: none;
+}
+
+.application-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+}
+
+.application-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.application-form-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  background-color: transparent;
+  outline: transparent;
+  padding: 16px 18px;
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--black);
+  transition: border-color var(--transition-dur-func);
+}
+
+.application-form-input:focus {
+  border-color: var(--green);
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.application-form-input::placeholder {
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.application-form-textarea {
+  width: 100%;
+  height: 94px;
+  resize: none;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  background-color: transparent;
+  outline: transparent;
+  padding-top: 16px;
+  padding-left: 18px;
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--black);
+  transition: border-color var(--transition-dur-func);
+}
+
+.application-form-textarea:focus {
+  border-color: var(--green);
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.application-form-textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.application-form-checkbox {
+  width: 146px;
+  margin-bottom: 40px;
+}
+
+.radio-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.application-checkbox:checked
+  + .application-checkbox-name
+  > .radio-icon-container {
+  fill: var(--green);
+  border-color: var(--green);
+}
+
+.application-checkbox-title {
+  font-size: 18px;
+  font-weight: var(--font-weight-semi);
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.application-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.application-checkbox-name {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.application-send {
+  display: block;
+  width: 335px;
+  height: 52px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  font-family: 'Manrope', serif;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.71;
+  border: transparent;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white);
+  background-color: var(--green);
+  transition: background-color var(--transition-dur-func);
+}
+
+.application-send:hover,
+.application-send:focus {
+  background-color: var(--hover-green);
+}
+
+.application-inform {
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.application-inform-accent-link {
+  color: currentColor;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+@media screen and (max-width: 374px) {
+  .application-form-container {
+    width: 100%;
+  }
+  .application-send {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .application-title .section-title {
+    margin-bottom: 16px;
+  }
+
+  .application-title .section-description {
+    margin-bottom: 64px;
+    width: 586px;
+  }
+
+  .application-form-container {
+    align-items: center;
+    width: 500px;
+  }
+
+  .application-input-container {
+    margin-bottom: 32px;
+  }
+
+  .application-form-input {
+    height: 56px;
+    line-height: 1.5;
+  }
+
+  .application-form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-form-textarea {
+    width: 500px;
+    height: 104px;
+    line-height: 1.5;
+  }
+
+  .application-form-textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-form-checkbox {
+    width: 500px;
+    margin-bottom: 32px;
+  }
+
+  .application-checkbox-title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .application-checkbox-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .application-checkbox-name {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .application-send {
+    display: block;
+    width: 500px;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .application-inform {
+    width: 500px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .application-inform-accent-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-title .section-description {
+    margin-bottom: 78px;
+  }
+
+  .application-content {
+    display: flex;
+    gap: 32px;
+  }
+  .application-decor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding-bottom: 40px;
+    border-radius: 30px;
+    background-color: var(--green);
+  }
+
+  .app-img {
+    margin-bottom: 20px;
+    border-radius: 30px;
+  }
+
+  .application-count {
+    text-align: center;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: var(--font-weight-bol);
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: -0.02em;
+  }
+
+  .application-lessons-description {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 1.5;
+  }
+}
