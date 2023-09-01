@@ -12,6 +12,7 @@ const themeStyles = {
     '--black': '#121417',
     '--gray': '#f3f5f6',
     '--white': '#fff',
+    '--medium-green': '#bee8cc',
     '--dark-transparent': 'rgba(18, 20, 23, 0.5)',
     '--light-transparent': 'rgba(255, 255, 255, 0.5)',
   },
@@ -20,8 +21,9 @@ const themeStyles = {
     '--black': '#fff',
     '--gray': '#000',
     '--white': '#121417',
+    '--medium-green': '#4dc274',
     '--dark-transparent': 'rgba(255, 255, 255, 0.5)',
-    '--light-transparent': 'rgba(18, 20, 23, 0.5)',
+    '--light-transparent': '#000',
   },
 };
 
