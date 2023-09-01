@@ -16,6 +16,7 @@
 @import url('./leave_application.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./modal_team.css');
 
 :root {
   --black: #121417;
