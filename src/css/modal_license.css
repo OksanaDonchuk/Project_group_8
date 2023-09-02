@@ -63,16 +63,20 @@
  width: 0;
 }
 
-ol {
+/* .modal-license-list{
+  list-style-type: decimal;
+} */
+
+.modal-license-list {
     counter-reset: list1;
 }
-ol > li {
+.modal-license-list > li {
     display: block;
     position: relative; 
     margin: 0 0 5px 1.7em; 
 }
 
-ol > li::before {
+.modal-license-list > li::before {
     position: absolute;
     left: -1.7em; 
     counter-increment: list1; 
@@ -80,14 +84,15 @@ ol > li::before {
     font-weight: 600;
 }
 
-ol > li > ol {
+.modal-license-list > li > ol {
     counter-reset: list2; 
 }
-ol > li > ol > li {
+.modal-license-list > li > ol > li {
     margin-left: 2.5em;
 }
-ol > li > ol > li::before {
+.modal-license-list > li > ol > li::before {
     left: -2.5em;
+    font-weight: 600;
     counter-increment: list2; 
     content: counter(list1) "." counter(list2) "."; 
 }
