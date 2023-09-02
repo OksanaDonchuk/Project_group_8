@@ -124,6 +124,7 @@
     line-height: 1.28;
     letter-spacing: -0.02em;
     color: #ffffff99;
+    cursor: pointer;
   }
   .terms-and-conditions-link:active {
     color: var(--green);
@@ -253,6 +254,7 @@
     letter-spacing: -0.02em;
     text-align: right;
     color: #ffffff99;
+    cursor: pointer;
   }
   .terms-and-conditions-link:active {
     color: var(--green);
@@ -289,6 +291,11 @@
   }
   .terms-and-conditions-link {
     transition: color var(--transition-dur-func);
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #ffffff99;
+    cursor: pointer;
   }
   .terms-and-conditions-link:hover,
   .terms-and-conditions-link:focus {
