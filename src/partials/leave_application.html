@@ -18,6 +18,7 @@
           alt="Girls with book and computer"
           width="492"
           height="92"
+          loading="lazy"
         />
 
         <p class="application-count">1000</p>
@@ -73,8 +74,13 @@
                 value="Maria"
                 checked
               />
-              <svg class="radio-icon-container" width="10" height="10">
-                <use href="../img/sprite.svg#icon-circle"></use>
+              <svg
+                class="radio-icon-container"
+                width="10"
+                height="10"
+                aria-label="check icon for Maria"
+              >
+                <use href="./img/sprite.svg#icon-circle"></use>
               </svg>
               Maria
             </label>
@@ -86,8 +92,13 @@
                 name="teacher"
                 value="Artem"
               />
-              <svg class="radio-icon-container" width="10" height="10">
-                <use href="../img/sprite.svg#icon-circle"></use>
+              <svg
+                class="radio-icon-container"
+                width="10"
+                height="10"
+                aria-label="check icon for Artem"
+              >
+                <use href="./img/sprite.svg#icon-circle"></use>
               </svg>
               Artem
             </label>
@@ -98,8 +109,13 @@
                 name="teacher"
                 value="Ilona"
               />
-              <svg class="radio-icon-container" width="10" height="10">
-                <use href="../img/sprite.svg#icon-circle"></use>
+              <svg
+                class="radio-icon-container"
+                width="10"
+                height="10"
+                aria-label="check icon for Ilona"
+              >
+                <use href="./img/sprite.svg#icon-circle"></use>
               </svg>
               Ilona
             </label>
@@ -110,8 +126,13 @@
                 name="teacher"
                 value="Volodymyr"
               />
-              <svg class="radio-icon-container" width="10" height="10">
-                <use href="../img/sprite.svg#icon-circle"></use>
+              <svg
+                class="radio-icon-container"
+                width="10"
+                height="10"
+                aria-label="check icon for Volodymyr"
+              >
+                <use href="./img/sprite.svg#icon-circle"></use>
               </svg>
               Volodymyr
             </label>
@@ -121,10 +142,12 @@
         <button class="application-send button" type="submit">Send</button>
         <div class="application-inform">
           <p>
-            By clicking on “Send” button, you agree to our&nbsp;<a
+            By clicking on “Send” button, you agree to our&nbsp;<button
               class="application-inform-accent-link"
-              href=""
-              >Privacy Policy</a
+              data-modal-privacy-open
+              type="button"
+            >
+              Privacy Policy</button
             >, <br />
             and allow Promodo to use this information for marketing purposes.
           </p>

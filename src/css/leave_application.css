@@ -92,7 +92,7 @@
 
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   cursor: pointer;
 }
 
@@ -169,6 +169,12 @@
   color: currentColor;
   font-size: 12px;
   line-height: 1.33;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-align: left;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 374px) {

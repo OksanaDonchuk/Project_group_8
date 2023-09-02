@@ -54,7 +54,7 @@
               href="https://www.facebook.com/goITclub/"
               target="_blank"
             >
-              <svg class="footer-social-icon" width="28" height="28">
+              <svg class="footer-social-icon" width="28" height="28" aria-label="facebook-icon">
                 <use href="./img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -66,7 +66,7 @@
               href="https://www.instagram.com/goitclub/"
               target="_blank"
             >
-              <svg class="footer-social-icon" width="28" height="28">
+              <svg class="footer-social-icon" width="28" height="28" aria-label="instagram-icon">
                 <use href="./img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -78,7 +78,7 @@
               href="https://www.youtube.com/c/GoIT"
               target="_blank"
             >
-              <svg class="footer-social-icon" width="28" height="28">
+              <svg class="footer-social-icon" width="28" height="28" aria-label="youtube-icon">
                 <use href="./img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -95,17 +95,27 @@
       <div class="terms-and-conditions-wrapper">
         <ul class="terms-and-conditions-list">
           <li class="terms-and-conditions-item">
-            <a class="link terms-and-conditions-link" href="">Privacy Policy</a>
+            <button
+            type="button"
+            class="link terms-and-conditions-link" 
+            data-modal-privacy-open
+            >Privacy Policy</button>
           </li>
           <li class="terms-and-conditions-item">
-            <a class="link terms-and-conditions-link" href=""
-              >Terms of Service</a
-            >
+            <button
+            type="button"
+            class="link terms-and-conditions-link" 
+            data-modal-license-open
+            >Terms of Service</button>
           </li>
+          
           <li class="terms-and-conditions-item">
-            <a class="link terms-and-conditions-link data-modal-open">
-              Team of Developers
-            </a>
+            <button 
+            type="button"
+            class="link terms-and-conditions-link"
+            data-modal-open
+              >Team of Developers
+            </button>
           </li>
         </ul>
       </div>

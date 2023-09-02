@@ -18,6 +18,8 @@
 @import url('./footer.css');
 @import url('./switch-theme.css');
 @import url('./modal_team.css');
+@import url('./modal_privacy.css');
+@import url('./modal_license.css');
 
 :root {
   --black-switchable: #121417;
@@ -51,4 +53,5 @@
 @font-face {
   font-family: 'Manrope';
   src: url('../font_manrope/Manrope-VariableFont_wght.ttf');
+  font-display: swap;
 }
