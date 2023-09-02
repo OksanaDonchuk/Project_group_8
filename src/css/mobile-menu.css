@@ -25,6 +25,7 @@
   width: 64%;
   max-width: 240px;
   height: 100%;
+  overflow: scroll;
   /* max-height: 812px; */
   background-color: var(--green);
   transition: transform 500ms ease-in-out;
