@@ -122,9 +122,13 @@
   .terms-and-conditions-link {
     font-size: 14px;
     line-height: 1.28;
+    text-align: left;
     letter-spacing: -0.02em;
     color: #ffffff99;
     cursor: pointer;
+    background-color: inherit;
+    border: none;
+    padding: 0;
   }
   .terms-and-conditions-link:active {
     color: var(--green);
@@ -190,6 +194,7 @@
     line-height: 1.28;
     letter-spacing: 0em;
     color: var(--white);
+
   }
 
   .footer-links-link:active {
@@ -233,6 +238,7 @@
   .footer-second-level {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     border-top: 1px solid #ffffff1a;
     padding-top: 16px;
   }
@@ -255,6 +261,8 @@
     text-align: right;
     color: #ffffff99;
     cursor: pointer;
+    background-color: inherit;
+    border: none;
   }
   .terms-and-conditions-link:active {
     color: var(--green);
@@ -295,6 +303,9 @@
     line-height: 1.28;
     letter-spacing: -0.02em;
     color: #ffffff99;
+    background-color: inherit;
+    border: none;
+
   }
   .terms-and-conditions-link:hover,
   .terms-and-conditions-link:focus {
