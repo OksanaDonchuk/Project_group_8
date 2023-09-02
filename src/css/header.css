@@ -164,7 +164,7 @@
   }
 
   .header-mobile-menu-close-btn-icon {
-    fill: currentColor;
+    stroke: currentColor;
     /* width: 40px;
     height: 40px; */
   }
