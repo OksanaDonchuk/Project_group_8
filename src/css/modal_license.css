@@ -1,0 +1,93 @@
+.license-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color: rgba(18, 20, 23, 0.4);
+    transition: opacity var(--transition-dur-func),
+      visibility var(--transition-dur-func);
+  
+  }
+  
+  .license-backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .license-modal{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .license-modal-btn-close {
+    border: none;
+    background-color: transparent;
+  
+    position: absolute;
+    top: 16px;
+    right:16px;
+    stroke: var(--black);
+    cursor: pointer;
+
+    transition: stroke var(--transition-dur-func);
+  }
+  
+  .license-modal-btn-close:hover,
+  .license-modal-btn-close:focus{
+    stroke: var(--green);
+  }
+
+  .modal-title{
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+.modal-license-scroll{
+  overflow-y: scroll;
+  height: 90%;
+}
+
+.modal-license-scroll::-webkit-scrollbar{
+ width: 0;
+}
+
+ol {
+    counter-reset: list1;
+}
+ol > li {
+    display: block;
+    position: relative; 
+    margin: 0 0 5px 1.7em; 
+}
+
+ol > li::before {
+    position: absolute;
+    left: -1.7em; 
+    counter-increment: list1; 
+    content: counter(list1) "."; 
+    font-weight: 600;
+}
+
+ol > li > ol {
+    counter-reset: list2; 
+}
+ol > li > ol > li {
+    margin-left: 2.5em;
+}
+ol > li > ol > li::before {
+    left: -2.5em;
+    counter-increment: list2; 
+    content: counter(list1) "." counter(list2) "."; 
+}
