@@ -31,6 +31,13 @@
   right: 8px;
   stroke: var(--black);
   cursor: pointer;
+
+  transition: stroke var(--transition-dur-func);
+}
+
+.modal-team-btn-close:hover,
+.modal-team-btn-close:focus{
+stroke: var(--green);
 }
 
 .modal-team-subtitle {

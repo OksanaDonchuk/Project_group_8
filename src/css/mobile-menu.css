@@ -1,0 +1,129 @@
+.mobile-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 20, 23, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+  /* transform: translateX(100%); */
+}
+
+.mobile-menu-backdrop.is-open {
+  /* transform: translateX(0%); */
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-mobile-menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 64%;
+  max-width: 240px;
+  height: 100%;
+  overflow: scroll;
+  /* max-height: 812px; */
+  background-color: var(--green);
+  transition: transform 500ms ease-in-out;
+  transform: translateX(100%);
+}
+
+.mobile-menu-backdrop.is-open .header-mobile-menu-container {
+  transform: translateX(0%);
+}
+
+.header-mobile-menu-close-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  color: var(--white-switchable);
+  stroke: currentColor;
+}
+
+.header-mobile-menu-container {
+  padding-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobile-menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-mobile-menu-nav-list-link {
+  color: var(--white-switchable);
+  font-family: 'Manrope';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.285;
+}
+
+.heder-mobile-menu-social-media-list {
+  display: flex;
+  position: absolute;
+  gap: 12px;
+  bottom: 32px;
+}
+
+.header-mobile-menu-social-media-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--light-transparent-switchable);
+  background-color: transparent;
+  fill: var(--white-switchable);
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .header-mobile-menu-open-btn-icon {
+    width: 40px;
+    height: 28px;
+  }
+
+  .header-mobile-menu-container {
+    padding-bottom: 32px;
+  }
+
+  .header-mobile-menu-container {
+    width: 50%;
+    height: 100%;
+    max-width: 384px;
+    background-color: var(--green);
+  }
+
+  .header-mobile-menu-close-btn {
+    right: 32px;
+  }
+
+  .header-mobile-menu-social-media-icon-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+}
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+  .mobile-menu-backdrop {
+    display: none;
+  }
+}
