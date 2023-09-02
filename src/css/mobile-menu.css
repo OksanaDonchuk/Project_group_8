@@ -1,10 +1,21 @@
-.backdrop {
-  transform: translateX(100%);
-  transition: transform 500ms ease-in;
+.mobile-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 20, 23, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+  /* transform: translateX(100%); */
 }
 
-.backdrop.is-open {
-  transform: translateX(0%);
+.mobile-menu-backdrop.is-open {
+  /* transform: translateX(0%); */
+  visibility: visible;
+  opacity: 1;
 }
 
 .header-mobile-menu-container {
@@ -16,6 +27,12 @@
   height: 100%;
   /* max-height: 812px; */
   background-color: var(--green);
+  transition: transform 500ms ease-in-out;
+  transform: translateX(100%);
+}
+
+.mobile-menu-backdrop.is-open .header-mobile-menu-container {
+  transform: translateX(0%);
 }
 
 .header-mobile-menu-close-btn {
@@ -105,7 +122,7 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1280px) {
-  .backdrop {
+  .mobile-menu-backdrop {
     display: none;
   }
 }

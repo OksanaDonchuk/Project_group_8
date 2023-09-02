@@ -244,7 +244,7 @@
     color: var(--black-switchable);
     opacity: 0.8;
     transition: border var(--transition-dur-func),
-      fill var(--transition-dur-func);
+      color var(--transition-dur-func);
   }
 
   .header-social-link:hover,
