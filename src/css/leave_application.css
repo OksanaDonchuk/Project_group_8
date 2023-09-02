@@ -86,9 +86,14 @@
   margin-bottom: 40px;
 }
 
-.radio-container {
-  display: inline-flex;
+.application-checkbox-name {
+  display: flex;
   align-items: center;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02;
+  cursor: pointer;
 }
 
 .radio-icon-container {
@@ -102,11 +107,15 @@
   border: 2px solid rgba(18, 20, 23, 0.2);
   border-radius: 50%;
   margin-right: 8px;
+  padding: 2px;
 }
 
-.application-checkbox:checked
-  + .application-checkbox-name
-  > .radio-icon-container {
+.application-checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.application-checkbox:checked + .radio-icon-container {
   fill: var(--green);
   border-color: var(--green);
 }
@@ -123,14 +132,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.application-checkbox-name {
-  display: block;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: -0.02em;
-  cursor: pointer;
 }
 
 .application-send {

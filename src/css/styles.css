@@ -17,6 +17,7 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./switch-theme.css');
+@import url('./modal_team.css');
 
 :root {
   --black-switchable: #121417;

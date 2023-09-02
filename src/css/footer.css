@@ -108,7 +108,7 @@
   }
   .terms-and-conditions-list {
     display: flex;
-    gap: 18px;
+  gap: 18px;
   }
   .footer-license {
     margin-bottom: 14px;
@@ -128,11 +128,19 @@
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
-    text-align: right;
     color: #ffffff99;
+    cursor: pointer;
   }
   .terms-and-conditions-link:active {
     color: var(--green);
+  }
+  .btn-open-modal-team{
+    display: inline;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    text-align: left;
+    line-height: inherit;
   }
 }
 
@@ -263,6 +271,7 @@
     letter-spacing: -0.02em;
     text-align: right;
     color: #ffffff99;
+    cursor: pointer;
   }
   .terms-and-conditions-link:active {
     color: var(--green);
@@ -398,9 +407,12 @@
     letter-spacing: -0.02em;
     text-align: right;
     color: #ffffff99;
+    cursor: pointer;
   }
   .terms-and-conditions-link:hover,
   .terms-and-conditions-link:focus {
     color: var(--green);
   }
+  
+
 }
