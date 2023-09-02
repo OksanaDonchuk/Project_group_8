@@ -36,6 +36,8 @@ const themeStyles = {
     '--medium-green-switchable': '#bee8cc',
     '--dark-transparent-switchable': 'rgba(18, 20, 23, 0.5)',
     '--light-transparent-switchable': 'rgba(255, 255, 255, 0.5)',
+    '--dark-hard-transparent-switchable': 'rgba(18, 20, 23, 0.1)',
+    '--light-light-transparent-switchable': 'rgba(255, 255, 255, 0.7)',
   },
 
   [THEMES.DARK]: {
@@ -45,6 +47,8 @@ const themeStyles = {
     '--medium-green-switchable': '#4dc274',
     '--dark-transparent-switchable': 'rgba(255, 255, 255, 0.5)',
     '--light-transparent-switchable': '#000',
+    '--dark-hard-transparent-switchable': 'rgba(255, 255, 255, 0.1)',
+    '--light-light-transparent-switchable': 'rgba(18, 20, 23, 0.7)',
   },
 };
 

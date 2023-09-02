@@ -32,7 +32,9 @@
   --white-switchable: #fff;
   --hover-green: #38ae5f;
   --dark-transparent-switchable: rgba(18, 20, 23, 0.5);
+  --dark-hard-transparent-switchable: rgba(18, 20, 23, 0.1);
   --light-transparent-switchable: rgba(255, 255, 255, 0.5);
+  --light-light-transparent-switchable: rgba(255, 255, 255, 0.7);
 
   --black: #121417;
   --green: #4dc274;
