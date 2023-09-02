@@ -1,8 +1,3 @@
-:root {
-  --dark-transparent: rgba(18, 20, 23, 0.5);
-  --light-transparent: rgba(255, 255, 255, 0.5);
-}
-
 .reviews-section {
   padding-bottom: 80px;
 }
@@ -14,7 +9,7 @@
   font-size: 14px;
   line-height: 1.71;
 
-  color: var(--dark-transparent);
+  color: var(--dark-transparent-switchable);
 }
 
 .reviews-item {
@@ -22,7 +17,7 @@
 
   border-radius: 16px;
 
-  background: var(--gray);
+  background: var(--gray-switchable);
 }
 
 .reviews-box {
@@ -70,14 +65,14 @@
   font-size: 14px;
   line-height: 1.71;
 
-  color: var(--dark-transparent);
+  color: var(--dark-transparent-switchable);
 }
 
 .reviews-swiper.swiper {
   width: 100%;
   padding-bottom: 40px;
   --swiper-pagination-color: var(--green);
-  --swiper-pagination-bullet-inactive-color: var(--black);
+  --swiper-pagination-bullet-inactive-color: var(--black-switchable);
 }
 
 @media screen and (min-width: 375px) {
