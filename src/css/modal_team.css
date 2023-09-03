@@ -136,7 +136,7 @@
 
 .modal-team-link-social:active .modal-team-container-social,
 .modal-team-link-social:hover .modal-team-container-social {
-  fill: var(--green);
+  fill: --hover-green;
   border-color: rgba(77, 194, 116, 0.1);
 }
 
