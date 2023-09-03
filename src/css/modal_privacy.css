@@ -1,67 +1,65 @@
 .privacy-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    background-color: rgba(18, 20, 23, 0.4);
-    transition: opacity var(--transition-dur-func),
-      visibility var(--transition-dur-func);
-  
-  }
-  
-  .privacy-backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  background-color: var(--dark-transparent-switchable);
+  transition: opacity var(--transition-dur-func),
+    visibility var(--transition-dur-func);
+}
 
-  .privacy-modal{
-    position: absolute;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--white);
-    border-radius: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 40px;
-  }
-  .privacy-modal-btn-close {
-    border: none;
-    background-color: transparent;
-  
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    stroke: var(--black);
-    cursor: pointer;
+.privacy-backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-    transition: stroke var(--transition-dur-func);
-  }
-  
-  .privacy-modal-btn-close:hover,
-  .privacy-modal-btn-close:focus{
-    stroke: var(--green);
-  }
+.privacy-modal {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-switchable);
+  border-radius: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+}
+.privacy-modal-btn-close {
+  border: none;
+  background-color: transparent;
 
-  .modal-privacy-scroll{
-    overflow-y: scroll;
-    height: 70%;
-  }
-  
-  .modal-privacy-scroll::-webkit-scrollbar{
-   width: 0;
-  }
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  stroke: var(--black-switchable);
+  cursor: pointer;
 
-  .modal-privacy-list-item{
-    margin-bottom: 8px;
-  }
- 
-  
-  .modal-privacy-paragraph{
-    text-indent: 20px;
-  }
+  transition: stroke var(--transition-dur-func);
+}
+
+.privacy-modal-btn-close:hover,
+.privacy-modal-btn-close:focus {
+  stroke: var(--green);
+}
+
+.modal-privacy-scroll {
+  overflow-y: scroll;
+  height: 70%;
+}
+
+.modal-privacy-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-privacy-list-item {
+  margin-bottom: 8px;
+}
+
+.modal-privacy-paragraph {
+  text-indent: 20px;
+}

@@ -25,7 +25,7 @@ const setSlidesHeight = function (swiper) {
   swiper.update();
 };
 
-swiperReviews = new Swiper('.swiper', {
+swiperReviews = new Swiper('.reviews-swiper', {
   modules: [Navigation, Pagination],
   spaceBetween: 20,
   loop: true,

@@ -16,12 +16,26 @@
 @import url('./leave_application.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./switch-theme.css');
 @import url('./mobile-menu.css');
 @import url('./modal_team.css');
 @import url('./modal_privacy.css');
 @import url('./modal_license.css');
 
 :root {
+  --black-switchable: #121417;
+  --green: #4dc274;
+  --medium-green-switchable: #bee8cc;
+  --green-linear: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --light-green: #d4fde1;
+  --gray-switchable: #f3f5f6;
+  --white-switchable: #fff;
+  --hover-green: #38ae5f;
+  --dark-transparent-switchable: rgba(18, 20, 23, 0.5);
+  --dark-hard-transparent-switchable: rgba(18, 20, 23, 0.1);
+  --light-transparent-switchable: rgba(255, 255, 255, 0.5);
+  --light-light-transparent-switchable: rgba(255, 255, 255, 0.7);
+
   --black: #121417;
   --green: #4dc274;
   --medium-green: #bee8cc;
@@ -30,6 +44,9 @@
   --gray: #f3f5f6;
   --white: #fff;
   --hover-green: #38ae5f;
+  --dark-transparent: rgba(18, 20, 23, 0.5);
+  --light-transparent: rgba(255, 255, 255, 0.5);
+
   --font-weight-bold: 700;
   --font-weight-semi: 600;
   --font-weight-reg: 400;
