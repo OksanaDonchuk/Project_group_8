@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 const swiperRef = document.querySelector('.teachers-swiper');
 
 const teachersSwiper = new Swiper('.teachers-swiper', {
-  modules: [Pagination],  
+  modules: [Pagination],
   loop: true,
   autoplay: {
     delay: 3000,
@@ -16,17 +16,29 @@ const teachersSwiper = new Swiper('.teachers-swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
-  slidesPerView: 1,  
+  slidesPerView: 1,
+  
   breakpoints: {
-    768: {
-      slidesPerView: 2,    
+        768: {   
+      slidesPerView: 2,     
     },
     1280: {
-        enabled: false,        
+      slidesPerView: 4,
     },
   },
+  on: {
+    slideChange: function () {
+      const slides = document.querySelectorAll('.teachers-swiper .swiper-slide');
+      slides.forEach((slide) => {
+        const teacherName =
+          slide.firstElementChild.lastElementChild.firstElementChild
+            .textContent;
+        slide.setAttribute('aria-label', `info about teacher ${teacherName}`);
+        slide.setAttribute('role', 'listitem');
+      });
+    },    
+  },
 });
-
 
 swiperRef.addEventListener('mouseover', function () {
   teachersSwiper.autoplay.stop();
