@@ -1,0 +1,23 @@
+.switch-theme {
+  position: fixed;
+  right: 15px;
+  top: 85px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--green);
+  color: var(--white);
+  z-index: 10000;
+}
+
+@media screen and (min-width: 1280px) {
+  .switch-theme {
+    right: 130px;
+    top: 105px;
+  }
+}

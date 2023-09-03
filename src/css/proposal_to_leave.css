@@ -1,5 +1,5 @@
 .proposal-leave-section {
-  min-width: 100%;
+  /* min-width: 100%; */
   height: auto;
 
   padding: 40px 20px 64px 20px;
@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 768px) {
   .proposal-leave-section {
-    width: 704px;
+    /* width: 704px; */
     padding: 64px 18px 92px 18px;
     border-radius: 30px;
     overflow: inherit;
@@ -35,7 +35,7 @@
 .call-to-action-heading {
   display: block;
   margin-bottom: 65px;
-  color: var(--white);
+  color: var(--white-switchable);
   font-size: 38px;
   font-weight: 700;
   line-height: 40px;
@@ -65,7 +65,7 @@
   font-size: 38px;
   font-weight: 700;
   line-height: 40px;
-  color: var(--medium-green);
+  color: var(--medium-green-switchable);
 }
 
 @media screen and (min-width: 768px) {
@@ -80,7 +80,8 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 255px;
+  width: 100%;
+  max-width: 255px;
   padding: 14px 0;
 
   font-family: Manrope;
@@ -185,11 +186,11 @@
 
   min-width: 100%;
 
-  height: 408px;
+  /* height: 408px; */
   padding: 40px 20px;
 
   border-radius: 16px;
-  background-color: var(--white);
+  background-color: var(--white-switchable);
 }
 
 @media screen and (min-width: 768px) {
@@ -221,7 +222,7 @@
   line-height: 24px;
   letter-spacing: -0.4px;
 
-  color: var(--black);
+  color: var(--black-switchable);
 }
 
 @media screen and (min-width: 768px) {
@@ -259,9 +260,9 @@
 }
 
 .proposal-item {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20px calc(100% - 28px);
+  grid-gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -270,7 +271,7 @@
   }
 }
 
-.proposal-item:not(:last-of-type) {
+.proposal-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -284,10 +285,15 @@
     width: 28px;
     height: 28px;
   }
+
+  .proposal-item {
+    display: grid;
+    grid-template-columns: 28px calc(100% - 44px);
+    grid-gap: 16px;
+  }
 }
 
 .proposal-description {
-  width: 227px;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -296,17 +302,9 @@
 
 @media screen and (min-width: 768px) {
   .proposal-description {
-    width: 437px;
-
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.4px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .proposal-description {
-    width: 624px;
   }
 }
 

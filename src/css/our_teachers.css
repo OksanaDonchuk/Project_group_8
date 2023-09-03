@@ -16,13 +16,13 @@
   gap: 8px;
 }
 .card-title {
-  color: var(--black);
+  color: var(--black-switchable);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 .card-description {
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--dark-transparent-switchable);
   text-align: center;
   font-size: 14px;
   line-height: 1.71;
@@ -31,7 +31,7 @@
   position: static;
 }
 .teachers-swiper .swiper-pagination-bullet {
-  background-color: var(--black);
+  background-color: var(--black-switchable);
 }
 .teachers-swiper .swiper-pagination-bullet-active {
   background-color: var(--green);

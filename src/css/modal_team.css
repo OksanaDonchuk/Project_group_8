@@ -12,14 +12,18 @@
 
 .modal-team-container {
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-image: linear-gradient(80deg, #7ce59f 0%, #bee8cc 100%);
   min-width: 200px;
   padding: 16px;
   border-radius: 30px;
   transition: opacity var(--transition-dur-func);
+}
+
+.modal-team-title {
+  color: var(--black);
 }
 
 .modal-team-btn-close {
@@ -36,8 +40,8 @@
 }
 
 .modal-team-btn-close:hover,
-.modal-team-btn-close:focus{
-stroke: var(--green);
+.modal-team-btn-close:focus {
+  stroke: var(--green);
 }
 
 .modal-team-subtitle {
@@ -50,13 +54,13 @@ stroke: var(--green);
 
 .container-scroll {
   overflow-y: scroll;
-  background-color: rgba(243, 245, 246, 0.9);
+  background-color: var(--gray-switchable);
   border-radius: 30px;
 
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 1px 0px rgba(46, 47, 66, 0.32),
     0px 1px 6px 0px rgba(46, 47, 66, 0.16);
-  height: 400px;
+  height: 500px;
 }
 
 .container-scroll::-webkit-scrollbar {
@@ -125,7 +129,7 @@ stroke: var(--green);
 .modal-team-link-social {
   display: flex;
   align-items: center;
-  text-decoration-color: rgba(18, 20, 23, 0.5);
+  text-decoration-color: var(--dark-transparent-switchable);
 }
 
 .modal-team-container-social {
@@ -146,7 +150,7 @@ stroke: var(--green);
 }
 
 .modal-team-text-social {
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--dark-transparent-switchable);
   text-align: center;
   font-size: 14px;
   line-height: 1.71;
@@ -217,6 +221,9 @@ stroke: var(--green);
 @media screen and (min-width: 1280px) {
   .modal-team-container {
     min-width: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .modal-team-dev {

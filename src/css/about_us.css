@@ -16,7 +16,7 @@
 .about-us--card {
   width: 100%;
   padding: 32px;
-  background-color: var(--gray);
+  background-color: var(--gray-switchable);
   border-radius: 16px;
 }
 
