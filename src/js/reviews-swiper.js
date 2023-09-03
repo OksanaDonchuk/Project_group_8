@@ -1,7 +1,6 @@
 import Swiper from 'swiper/bundle';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const swiperContainer = document.querySelector('.reviews-swiper');
@@ -26,7 +25,7 @@ const setSlidesHeight = function (swiper) {
 };
 
 swiperReviews = new Swiper('.reviews-swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination],
   spaceBetween: 20,
   loop: true,
   autoplay: {
