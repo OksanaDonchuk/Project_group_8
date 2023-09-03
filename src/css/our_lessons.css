@@ -82,7 +82,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: var(--green);
+  background-color: var(--green);
   margin-top: 20px;
   color: var(--white);
   font-family: Manrope;
@@ -90,10 +90,11 @@
   font-weight: 700;
   line-height: 1.7;
   text-decoration: none;
+  transition: background-color var(--transition-dur-func);
 }
 
 .lessons__link:focus {
-  background: var(--hover-green);
+  background-color: var(--hover-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -122,10 +123,11 @@
     padding-bottom: 16px;
     font-size: 18px;
     line-height: 1.55;
+    transition: background-color var(--transition-dur-func);
   }
 
   .lessons__link:hover {
-    background: var(--hover-green);
+    background-color: var(--hover-green);
   }
 }
 

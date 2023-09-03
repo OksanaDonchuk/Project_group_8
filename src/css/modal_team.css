@@ -130,8 +130,8 @@
   padding: 8px;
   fill: var(--black-switchable);
   cursor: pointer;
-  transition: border var(--transition-dur-func),
-    color var(--transition-dur-func);
+  transition: border-color var(--transition-dur-func),
+    fill var(--transition-dur-func);
 }
 
 .modal-team-link-social:active .modal-team-container-social,
