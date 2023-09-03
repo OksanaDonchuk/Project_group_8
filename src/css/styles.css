@@ -22,6 +22,7 @@
 @import url('./modal_team.css');
 @import url('./modal_privacy.css');
 @import url('./modal_license.css');
+@import url('./aos.css');
 
 :root {
   --black-switchable: #121417;
