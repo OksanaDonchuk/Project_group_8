@@ -269,6 +269,7 @@
   display: grid;
   grid-template-columns: 20px calc(100% - 28px);
   grid-gap: 8px;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
