@@ -175,6 +175,12 @@
   text-decoration: underline;
   text-align: left;
   cursor: pointer;
+  transition: color var(--transition-dur-func);
+}
+
+.application-inform-accent-link:hover,
+.application-inform-accent-link:focus {
+  color: var(--green);
 }
 
 @media screen and (max-width: 374px) {
@@ -292,6 +298,7 @@
   .app-img {
     margin-bottom: 20px;
     border-radius: 30px;
+    object-fit: cover;
   }
 
   .application-count {
