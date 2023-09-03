@@ -9,6 +9,8 @@
       content="english course, english school, English excellence"
     />
     <title>English excellence</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/Project_group_8/assets/index-ad4ab971.js"></script>
     <link rel="stylesheet" href="/Project_group_8/assets/index-9e52c0f1.css">
@@ -106,7 +108,7 @@
     <main>
       <section class="hero section">
   <div class="hero-bg">
-    <div class="hero-container">
+    <div class="hero-container" data-aos="fade-right" data-aos-duration="1500">
       <h1 class="hero-title">
         Discover the joy of learning
         <span class="title-accent">English</span> with us!
@@ -183,7 +185,12 @@
     </p>
 
     <ul class="lessons__list">
-      <li class="lessons__elements">
+      <li
+        class="lessons__elements"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+      >
         <h3 class="lessons__title2">Practice</h3>
         <p class="lessons__paragraph2">40$ / month</p>
         <p class="lessons__paragraph3">
@@ -194,7 +201,12 @@
         <a href="#application" class="lessons__link">Leave an application</a>
       </li>
 
-      <li class="lessons__elements">
+      <li
+        class="lessons__elements"
+        data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+      >
         <h3 class="lessons__title2">Standard</h3>
         <p class="lessons__paragraph2">70$ / month</p>
         <p class="lessons__paragraph3">
@@ -205,7 +217,12 @@
         <a href="#application" class="lessons__link">Leave an application</a>
       </li>
 
-      <li class="lessons__elements">
+      <li
+        class="lessons__elements"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+      >
         <h3 class="lessons__title2">Individual</h3>
         <p class="lessons__paragraph2">99$ / month</p>
         <p class="lessons__paragraph3">
@@ -1118,6 +1135,7 @@
   </div>
 </footer>
 
+
     <!-- MOBILE AND TABLET MENU -->
 
 <div class="mobile-menu-backdrop js-menu-container">
@@ -1710,6 +1728,10 @@
 </div>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
   </body>
 </html>
