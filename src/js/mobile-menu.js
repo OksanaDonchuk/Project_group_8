@@ -10,7 +10,7 @@ const onEscapeClose = event => {
   if (event.code !== 'Escape') return;
   toggleMenu();
 };
-console.log(body);
+
 const onClickBackdropClose = event => {
   if (event.target !== event.currentTarget) return;
   toggleMenu();
